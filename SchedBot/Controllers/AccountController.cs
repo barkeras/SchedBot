@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchedBot.Models.Account;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,6 +25,13 @@ namespace SchedBot.Controllers
             }
 
             return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public ActionResult Create(CreateUserViewModel newUser)
+        {
+            return null;
         }
     }
 }
